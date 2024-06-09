@@ -1,0 +1,32 @@
+.outer-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100vh;
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+.inner-container {
+    display: flex;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.image-container {
+    width: 300px;
+    height: 600px;
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.file-upload-container {
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+body{
+
+  background: fixed;
+  background-color: cyan;
+
+}
+
+
+.text-center {
+    text-align: center;
+  }
+  
+   .d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+
+  }
+   
+  .my-3 {
+    margin-top:20px; /* Adjust this value to bring the text down */
+  }
+  
+  .links{
+    text-align: center;
+  }

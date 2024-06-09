@@ -1,0 +1,22 @@
+<div class="container d-flex flex-column justify-content-center align-items-center mt-5">
+    <form [formGroup]="form" (submit)="onSubmit()" class="form-signin col-4">
+        <h1 class="h3 my-3 fw-normal text-center">Admin Login</h1>
+        <input formControlName="email" type="email" name="email" class="form-control my-2" placeholder="Email">
+        <div *ngIf="isSubmitted && form.get('email')?.errors">
+            <div *ngIf="form.get('email')?.hasError('required')" style="color: red;">Email is required</div>
+            <div *ngIf="form.get('email')?.hasError('email')" style="color: red;">Invalid email format</div>
+        </div>
+
+        <input formControlName="password" type="password" class="form-control my-2" placeholder="Password">
+        <div *ngIf="isSubmitted && form.get('password')?.errors">
+            <div *ngIf="form.get('password')?.hasError('required')" style="color: red;">Password is required</div>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-warning my-3" type="submit">Log In</button>
+    </form>
+</div>
+
+<button></button>
+<app-create-user [val]=""></app-create-user>
+
+

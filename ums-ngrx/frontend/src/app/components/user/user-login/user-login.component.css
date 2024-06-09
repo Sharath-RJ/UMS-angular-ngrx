@@ -1,0 +1,40 @@
+
+
+/* Add this CSS to your styles.css or in your component's style file */
+
+.d-flex {
+    display: flex;
+    align-items: center; /* Add this line to vertically center the content */
+    height: 100vh; /* Add this line to make sure the container takes the full height of the viewport */
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  .form-signin {
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 80px; /* Adjust this value to bring the form down */
+  }
+  
+  /* Add more styles as needed */
+  
+  .div-50 {
+    margin-top: 20px; /* Add margin to the div containing the links */
+  }
+  
+  .div-50 {
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-link {
+    order: 1;
+}
+
+.right-link {
+    order: 2;
+}

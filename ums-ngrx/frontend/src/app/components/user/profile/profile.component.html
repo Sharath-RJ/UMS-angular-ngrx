@@ -1,0 +1,23 @@
+
+
+<div style="text-align: right; margin:40px">
+    <a routerLink="/user/login" class="nav-link" (click)="logout()">Logout</a>
+        
+</div>
+<div class="outer-container">
+
+    <div class="inner-container">
+        <p>Name: {{name }}</p>
+        <p>Email: {{email }}</p>
+    </div>
+
+    <div class="image-container">
+        <img [src]="'http://localhost:3000/images/'+img" alt="User Profile">
+    </div>
+
+    <div class="file-upload-container">
+        <input type="file" name="image" (change)="onFileSelected($event)">
+        <!-- <button class="btn btn-primary" (click)="onSubmit()">Upload</button> -->
+    </div>
+
+</div>
